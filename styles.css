@@ -1,0 +1,14 @@
+.header { 
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+
+}
+
+.home {
+    background-color: beige;
+    justify-content: center;
+    font-size: x-large;
+    color: blue;
+}
