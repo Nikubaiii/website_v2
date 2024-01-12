@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Set the background to black */
+  color: #fff; /* Set text color to white */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-container {
+  background-color: #000; /* Slightly lighter color for the container */
+  padding: 20px;
+  margin: 20px auto; /* Center the container horizontally with auto margin */
+  width: 25%; /* Set the width to 25% of the viewport */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-body {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #fff; /* Input background color */
+  color: #000; /* Input text color */
+  border: none;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #0066cc; /* Darker blue for the button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.date-group {
+  margin-top: 20px;
+}
+
+.section-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
